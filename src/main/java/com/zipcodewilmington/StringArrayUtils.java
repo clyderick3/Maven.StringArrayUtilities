@@ -1,6 +1,8 @@
 package com.zipcodewilmington;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by leon on 1/29/18.
@@ -129,7 +131,10 @@ public class StringArrayUtils {
      * @return array with identical contents excluding values of `value`
      */ // TODO
     public static String[] removeValue(String[] array, String valueToRemove) {
-        return null;
+        List<String> aList = new ArrayList<>(Arrays.asList(array));
+        aList.remove(Arrays.asList(valueToRemove));
+        array = aList.toArray(new String[0]);
+        return array;
     }
 
     /**
