@@ -88,10 +88,19 @@ public class StringArrayUtils {
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
     public static boolean isPangramic(String[] array) {
-        Boolean pangramicLeft, pangramicRight, pangramic = true;
+        //Name helpful names for the booleans.
+        Boolean pangramicUpperCase, pangramicLowerCase, pangramic = true;
+        //Create an arrayString using an array of 26 characters.
         String arrayString = Arrays.toString(array);
         //declare a for loop the length of the alphabet
-        for (int i = 0; i <= 26; i++);
+        for (int i = 0; i <= 26; i++) {
+            pangramicUpperCase = arrayString.contains(Character.toString((char)('A' + i)));
+            pangramicLowerCase - arrayString.contains(Character.toString((char)('a' + i)));
+            if ((pangramicUpperCase == false) && (pangramicLowerCase == false)) {
+                return array;
+            }
+
+        }
         return false;
     }
 
