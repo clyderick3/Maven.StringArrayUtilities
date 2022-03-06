@@ -1,5 +1,7 @@
 package com.zipcodewilmington;
 
+import java.util.Arrays;
+
 /**
  * Created by leon on 1/29/18.
  */
@@ -87,7 +89,9 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array) {
         Boolean pangramicLeft, pangramicRight, pangramic = true;
-        String arrayString =Arrays.toString(array);
+        String arrayString = Arrays.toString(array);
+        //declare a for loop the length of the alphabet
+        for (int i = 0; i <= 26; i++);
         return false;
     }
 
