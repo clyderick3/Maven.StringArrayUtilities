@@ -132,7 +132,7 @@ public class StringArrayUtils {
      */ // TODO
     public static String[] removeValue(String[] array, String valueToRemove) {
         List<String> aList = new ArrayList<>(Arrays.asList(array));
-        aList.remove(Arrays.asList(valueToRemove));
+        aList.removeAll(List.of(valueToRemove));
         array = aList.toArray(new String[0]);
         return array;
     }
