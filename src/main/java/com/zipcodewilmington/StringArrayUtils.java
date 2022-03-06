@@ -53,11 +53,12 @@ public class StringArrayUtils {
      */ // TODO
     public static String[] reverse(String[] array) {
         String[] result = new String[array.length];
-        //cat --> tac . take t from array.length - 1 to result[0].
-        //result [0] = array.length - 1.
-        // i - array.length + 1
-        for (int i = array.length - 1; i >= 0 ; i--) {
-            result [0] = array[i];
+        // i - array.length + 1   d u c k s   array.length = 5
+        // array.length = 5     i = 3; == k.
+
+        for (int i = 0; i < array.length ; i++) {
+           // result -[3] -  i = array [3]
+            result [i]  = array[array.length - 1 - i]; // when i = 0 the first letter will be
         }
         return result;
     }
