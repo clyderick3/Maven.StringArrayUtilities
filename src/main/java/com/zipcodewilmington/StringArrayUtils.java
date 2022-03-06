@@ -110,8 +110,18 @@ public class StringArrayUtils {
      * @return number of occurrences the specified `value` has occurred
      */ // TODO
     public static int getNumberOfOccurrences(String[] array, String value) {
-        return 0;
+        //Check lecture and Think Java for String Array help.
+        //get my counter ready
+        int count = 0;
+        for (String string : array) {
+            if (string.equals(value)) {
+                count++;
+            }
+        }
+        return count;
     }
+
+
 
     /**
      * @param array         array of String objects
