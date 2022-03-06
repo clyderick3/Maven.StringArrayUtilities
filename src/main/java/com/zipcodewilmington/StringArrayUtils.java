@@ -95,9 +95,9 @@ public class StringArrayUtils {
         //declare a for loop the length of the alphabet
         for (int i = 0; i <= 26; i++) {
             pangramicUpperCase = arrayString.contains(Character.toString((char)('A' + i)));
-            pangramicLowerCase - arrayString.contains(Character.toString((char)('a' + i)));
+            pangramicLowerCase = arrayString.contains(Character.toString((char)('a' + i)));
             if ((pangramicUpperCase == false) && (pangramicLowerCase == false)) {
-                return array;
+                return false;
             }
 
         }
