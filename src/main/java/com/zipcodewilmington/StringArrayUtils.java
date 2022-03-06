@@ -86,6 +86,8 @@ public class StringArrayUtils {
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
     public static boolean isPangramic(String[] array) {
+        Boolean pangramicLeft, pangramicRight, pangramic = true;
+        String arrayString =Arrays.toString(array);
         return false;
     }
 
