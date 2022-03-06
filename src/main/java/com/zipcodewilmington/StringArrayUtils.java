@@ -96,12 +96,12 @@ public class StringArrayUtils {
         for (int i = 0; i <= 26; i++) {
             pangramicUpperCase = arrayString.contains(Character.toString((char)('A' + i)));
             pangramicLowerCase = arrayString.contains(Character.toString((char)('a' + i)));
-            if ((pangramicUpperCase == false) && (pangramicLowerCase == false)) {
-                return false;
+            if ((!pangramicUpperCase) && (!pangramicLowerCase)) {
+                pangramic = false;
             }
 
         }
-        return false;
+        return pangramic;
     }
 
     /**
