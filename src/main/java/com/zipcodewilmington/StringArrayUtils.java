@@ -145,10 +145,21 @@ public class StringArrayUtils {
         ArrayList<String> newArr = new ArrayList<>();
 
         int n = array.length;
-        if (n==0 || n==1){
+        if (n == 0 || n == 1) {
             return array;
 
         }
+        for (int i = 0; i < n - 1; i++) {
+            if (array[i] != array[i + 1]) {
+                newArr.add(array[i]);
+            }
+
+// Add to new array and return the new string array.
+        }
+        newArr.add(array[n - 1]);
+        return newArr.toArray(new String[0]);
+    }
+
 
 
     /**
