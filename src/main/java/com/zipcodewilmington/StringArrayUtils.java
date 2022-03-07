@@ -48,7 +48,7 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean contains(String[] array, String value) {
 
-        return false;
+        return Arrays.asList(array).contains(value);
     }
 
     /**
